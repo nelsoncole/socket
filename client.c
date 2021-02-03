@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		printf("Enviar: ");
 		
 		fgets(buf,128,stdin);
-		send(client,reply,128,0);
+		send(client,buf,128,0);
 
 		printf("Receber: ");
 		recv(client, buf,128,0);
