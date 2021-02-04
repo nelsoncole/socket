@@ -28,8 +28,8 @@ int main()
 	memset(ip_client,0,INET_ADDRSTRLEN);
 	
 	saddr.sin_family	= AF_INET;
-	//saddr.sin_addr.s_addr	= htonl(INADDR_ANY);
-	saddr.sin_addr.s_addr	= inet_addr("100.114.56.187");
+	saddr.sin_addr.s_addr	= htonl(INADDR_ANY);
+	//saddr.sin_addr.s_addr	= inet_addr("127.0.0.1");
 	saddr.sin_port	= htons(SERVER_PORT);
 	
 	csize = sizeof(struct sockaddr_in);
