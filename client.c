@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <locale.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <sys/types.h>
@@ -13,6 +14,8 @@ struct sockaddr_in  saddr;
 
 int main(int argc, char **argv)
 {
+
+	setlocale(LC_ALL, "portuguese");
 	memset(ip_server,0,16);
 	printf("ServerIP: ");
 //	fgets(ip_server,16,stdin);
