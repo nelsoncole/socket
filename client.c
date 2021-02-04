@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	getchar();
 
 	saddr.sin_family = AF_INET;
-	saddr.sin_port = htons(2000);
+	saddr.sin_port = htons(5000);
 	inet_aton(ip_server,&(saddr.sin_addr));
 	
 
